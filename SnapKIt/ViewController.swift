@@ -13,7 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        setup()
+        
+    }
+    
+    func setup() {
+        view.backgroundColor = .purple
+        title = "Example 1"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
 
