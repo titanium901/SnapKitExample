@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     
     func setupViews() {
         view.addSubview(mainView)
-        mainView.addSubview(subView)
+        mainView.addSubview(subView) 
         
         mainView.snp.makeConstraints { (make) in
             make.topMargin.left.equalTo(20)
