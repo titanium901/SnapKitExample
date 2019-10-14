@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		25F631BF14DED2ABD6AEABFC /* Pods-SnapKIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapKIt/Pods-SnapKIt.debug.xcconfig"; sourceTree = "<group>"; };
 		76EC0C7BA81E9EA40C68A56D /* Pods_SnapKIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA88CF04235495BF00EB9189 /* SnapKIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA88CF04235495BF00EB9189 /* SnapKItExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKItExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA88CF07235495BF00EB9189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA88CF09235495BF00EB9189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA88CF0B235495BF00EB9189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		CA88CF05235495BF00EB9189 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA88CF04235495BF00EB9189 /* SnapKIt.app */,
+				CA88CF04235495BF00EB9189 /* SnapKItExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 			);
 			name = SnapKIt;
 			productName = SnapKIt;
-			productReference = CA88CF04235495BF00EB9189 /* SnapKIt.app */;
+			productReference = CA88CF04235495BF00EB9189 /* SnapKItExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -331,7 +331,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IuriiPopov.SnapKIt;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SnapKItExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IuriiPopov.SnapKIt;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SnapKItExample;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
