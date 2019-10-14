@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49BA8524B000909EFAF5C39C /* Pods_SnapKIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EC0C7BA81E9EA40C68A56D /* Pods_SnapKIt.framework */; };
 		CA88CF08235495BF00EB9189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88CF07235495BF00EB9189 /* AppDelegate.swift */; };
 		CA88CF0A235495BF00EB9189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88CF09235495BF00EB9189 /* SceneDelegate.swift */; };
 		CA88CF0C235495BF00EB9189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88CF0B235495BF00EB9189 /* ViewController.swift */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25F631BF14DED2ABD6AEABFC /* Pods-SnapKIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapKIt/Pods-SnapKIt.debug.xcconfig"; sourceTree = "<group>"; };
+		76EC0C7BA81E9EA40C68A56D /* Pods_SnapKIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA88CF04235495BF00EB9189 /* SnapKIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA88CF07235495BF00EB9189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA88CF09235495BF00EB9189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA88CF0B235495BF00EB9189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA88CF10235495BF00EB9189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA88CF15235495BF00EB9189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D46809D5A57AA5430158489E /* Pods-SnapKIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapKIt/Pods-SnapKIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BA8524B000909EFAF5C39C /* Pods_SnapKIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85A2E7817AB2A6CA9A1C34B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76EC0C7BA81E9EA40C68A56D /* Pods_SnapKIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA88CEFB235495BF00EB9189 = {
 			isa = PBXGroup;
 			children = (
 				CA88CF06235495BF00EB9189 /* SnapKIt */,
 				CA88CF05235495BF00EB9189 /* Products */,
+				D456751CD3F5601CA0AF4AF4 /* Pods */,
+				85A2E7817AB2A6CA9A1C34B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +76,15 @@
 			path = SnapKIt;
 			sourceTree = "<group>";
 		};
+		D456751CD3F5601CA0AF4AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25F631BF14DED2ABD6AEABFC /* Pods-SnapKIt.debug.xcconfig */,
+				D46809D5A57AA5430158489E /* Pods-SnapKIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA88CF18235495BF00EB9189 /* Build configuration list for PBXNativeTarget "SnapKIt" */;
 			buildPhases = (
+				AC662B375116CE4AEA0E075D /* [CP] Check Pods Manifest.lock */,
 				CA88CF00235495BF00EB9189 /* Sources */,
 				CA88CF01235495BF00EB9189 /* Frameworks */,
 				CA88CF02235495BF00EB9189 /* Resources */,
+				ECEBBA64BD50C29554263EE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +150,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC662B375116CE4AEA0E075D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapKIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECEBBA64BD50C29554263EE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SnapKIt/Pods-SnapKIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapKIt/Pods-SnapKIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA88CF00235495BF00EB9189 /* Sources */ = {
@@ -255,6 +320,7 @@
 		};
 		CA88CF19235495BF00EB9189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F631BF14DED2ABD6AEABFC /* Pods-SnapKIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -273,6 +339,7 @@
 		};
 		CA88CF1A235495BF00EB9189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46809D5A57AA5430158489E /* Pods-SnapKIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
