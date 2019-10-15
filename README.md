@@ -2,4 +2,4 @@
 
 ### SnapKit
 
-![Simulator Screen Shot - iPhone Xʀ - 2019-10-15 at 10 38 24](https://user-images.githubusercontent.com/30910230/66810577-2df8d500-ef38-11e9-84f7-7a6465216162.png)
+![Снимок экрана 2019-10-15 в 10 41 00](https://user-images.githubusercontent.com/30910230/66810623-4c5ed080-ef38-11e9-8a53-8b684c0e2e83.png)
