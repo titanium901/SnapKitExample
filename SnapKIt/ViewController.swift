@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     func setup() {
         view.backgroundColor = .purple
-        title = "Example 1"
+        title = "Example"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
